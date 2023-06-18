@@ -10,7 +10,7 @@
   <body>
 <div>
 <p>下のボタンをブックマークバーにドラックアンドドロップ</p>
-<a title="j-url" href="javascript:(function(){b=new URLSearchParams(location.search);a=document.createElement('input');c='https://nextnex.com/?url=https://www.youtube.com/watch?v=';d=location.pathname.startsWith('/shorts/')?location.pathname.slice(8):b.get('v');if(d){a.value=c+d;document.body.appendChild(a);a.select();document.execCommand('copy');document.body.removeChild(a);alert(c+d);}else{alert('error')}})();">j-url</a>
+<a title="j-url" href="javascript:(function(){b=new URLSearchParams(location.search);c='https://nextnex.com/?url=https://www.youtube.com/watch?v=';d=location.pathname.startsWith('/shorts/')?location.pathname.slice(8):b.get('v');if(d){a=document.createElement('input');a.value=c+d;document.body.appendChild(a);a.select();document.execCommand('copy');document.body.removeChild(a);alert(c+d);}else{alert('error')}})();">j-url</a>
 <ol style="text-align: start;margin-top: 3rem;">
   <li>youtubeの動画ページまたは、shortsのページを開きます。</li>
   <li>追加したブックマークをクリックします。</li>
