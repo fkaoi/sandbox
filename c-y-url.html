@@ -12,10 +12,21 @@
 <p>下のボタンをブックマークバーにドラックアンドドロップ</p>
 <a title="c-y-url" href="javascript:(function(){let b=new URLSearchParams(location.search),c='https://www.youtube.com/watch?v=',d=location.pathname.startsWith('/shorts/')?location.pathname.slice(8):b.get('v');if(d){a=document.createElement('input');a.value=c+d;document.body.appendChild(a);a.select();document.execCommand('copy');document.body.removeChild(a);alert(c+d);}else{alert('error')}})();">c-y-url</a>
 <ol style="text-align: start;margin-top: 3rem;">
-  <li>youtubeの動画ページまたは、shortsのページを開きます。</li>
+  <li>YouTubeの動画ページまたは、shortsのページを開きます。</li>
   <li>追加したブックマークをクリックします。</li>
   <li>完了です。</li>
 </ol>
+<details style="margin-top:2rem;">
+  <summary>詳細</summary>
+  <h4 style="margin-top:1rem;">概要</h4>
+  <p>YouTubeのshortページ、動画ページ、YouTube Musicの再生ページにて<code>`https://youtube.com/watch?v=${ビデオid}`</code>のフォーマットにURLを変換しクリップボードにコピーするツールです。</p>
+  <p>上記ボタンをドラック&ドロップすることで追加されるブックマークをクリックすると実行されます。</p>
+  <p>ブックマークを使用してスクリプトを実行させるため、待機中にメインメモリを使用しません。</p>
+  <h4 style="margin-top:1rem;">code:javascript</h4>
+  <pre style="overflow-y:auto;display:block;"><code style="display:inline-block;">javascript:(function(){let b=new URLSearchParams(location.search),c='https://www.youtube.com/watch?v=',d=location.pathname.startsWith('/shorts/')?location.pathname.slice(8):b.get('v');if(d){a=document.createElement('input');a.value=c+d;document.body.appendChild(a);a.select();document.execCommand('copy');document.body.removeChild(a);alert(c+d);}else{alert('error')}})();</code></pre>
+  <h4 style="margin-top:1rem;">そのほか</h4>
+  <p>「YouTube」は、グーグル　エルエルシーの登録商標です。</p>
+</details>
 </div>
 </body>
   <style>
